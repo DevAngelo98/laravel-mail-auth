@@ -1,0 +1,65 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body{
+  background: lightblue;
+
+
+  header,footer,.my_head {
+    margin: 10px;
+    background: red;
+    text-align: center;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+  }
+
+  .category{
+    display: flex;
+    background-color: lightsalmon;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    .posts{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+        .post{
+          padding: 5px;
+          background-color: lightgray;
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          margin: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  .postShow{
+    text-align: center;
+    background-color: lightgreen;
+    border-radius: 10px;
+  }
+  .postEdit, .categoryEdit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(219, 87, 87);
+    >*{
+      margin-bottom: 10px;
+    }
+  }
+}
